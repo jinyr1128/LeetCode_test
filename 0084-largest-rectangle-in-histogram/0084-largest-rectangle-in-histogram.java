@@ -11,7 +11,7 @@ class Solution {
             } else {
                 int top = stack.pop();
                 maxArea = Math.max(maxArea, heights[top] * (stack.isEmpty() ? i : i - 1 - stack.peek()));
-                i--; // 현재 막대를 다시 처리하기 위해 인덱스 감소
+                i--; 
             }
         }
         
